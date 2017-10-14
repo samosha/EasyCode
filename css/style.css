@@ -57,6 +57,10 @@ option, option:hover{
 
 /* DEFAULT COMPONENT END */
 
-/* CUSTOM STYLE START*/
-
+/* CUSTOM STYLE START */
+.form-wrapper{
+  background: url("../img/login-bg-960x960.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
 /* CUSTOM STYLE END*/
