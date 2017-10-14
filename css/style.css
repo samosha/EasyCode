@@ -54,7 +54,73 @@ option, option:hover{
 /* DEFAULT CLASSES END */
 
 /* DEFAULT COMPONENT START */
+.input-group{
+  position: relative;
+  margin-bottom: 20px;
+}
 
+.form-control{
+  border: 1px solid #49b871;
+  height: 50px;
+  font-size: 17px;
+  color: rgba(255, 255, 255, .8);
+  background-color: transparent; /*прозрачній фон*/
+  border-radius: 30px;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.input-group label{
+color: #fff;
+font-size: 15px;
+position: absolute;
+left: 18px;
+top: 50%;
+transform: translateY(-50%);
+
+}
+
+.btn{
+  display: inline-block;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 15px 50px;
+  text-align: center;
+}
+
+.btn.full-width{
+  width: 100%;
+}
+.btn.btn-default{
+  background-color: #36cb6c;
+  color: #fff;
+}
+.btn.btn-default:hover{
+  box-shadow: 0 3px 10px #36cb6c;
+  transition: all .2s linear;
+}
+.btn.btn-ic{
+  font-size: 13px;
+  font-weight: 400;
+  padding: 15px 20px;
+}
+.btn.btn-fb{
+  background-color:#0076b8 ;
+  color: #fff
+}
+.btn.btn-fb:hover{
+  box-shadow: 0 3px 10px #36cb6c;
+  transition: all .2s linear;
+}
+
+
+.btn.btn-ic .fa{
+  font-size:15px;
+  margin-right: 15px; 
+}
 /* DEFAULT COMPONENT END */
 
 /* CUSTOM STYLE START */
@@ -62,5 +128,61 @@ option, option:hover{
   background: url("../img/login-bg-960x960.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
+  box-shadow: 100vw 0 0 rgba(0,0,0,0.5) inset;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  padding: 50px 0;
 }
+
+.user-auth-from{
+  max-width: 240px;
+  width: 100%;
+
+}
+
+.logo{
+  margin-bottom: 40px;
+}
+.user-auth-from form .btn{
+  margin-top:50px;
+}
+
 /* CUSTOM STYLE END*/
+/*Media*/
+@media(min-width:480px){
+  .user-auth-from{
+    max-width: 320px;
+  }
+}
+@media (min-width:600px){
+  .user-auth-from{
+    max-width: 480px;
+  }
+}
+
+@media(min-width: 992px){
+  .user-auth-from{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    width: 60vh;
+  }
+  .user-auth-from form{
+    width: 50%;
+  }
+  .other-auth-methods{
+    width: 50%;
+    margin-top: 0;
+    margin-left: 50px;
+  }
+}
+
+@media(min-width:1200px){
+  .form-wrapper{
+    background: url('../img/login-bg.jpg') no-repeat center / cover;
+  }
+}
